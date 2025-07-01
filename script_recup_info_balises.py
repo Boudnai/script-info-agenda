@@ -1,7 +1,7 @@
 # IMPORTANT : IL NE FAUT PAS QU'IL Y AI DE CARACTÈRE SPÉCIAUX ENTRE LES BALISES DANS LE FICHIER CONTENANT LES DONNÉES (PAS DE PARENTHÈSES PAR EXEMPLE) 
 # SINON CE N'EST PAS PRIS EN COMPTE PAR LE SCRIPT ET LAISSE UNE CASE VIDE
 import re
-import openpyxl # pour installer openpyxl (il faut l'installer pour pouvoir l'utiliser): pip install openpyxl
+import openpyxl 
 from openpyxl import Workbook
 
 def extract_data(file_path, output_excel):
@@ -37,6 +37,4 @@ def extract_data(file_path, output_excel):
     print(f"Fichier Excel généré : {output_excel}")
 
 
-extract_data("exemple.txt", "donnees.xlsx") # exemple.txt correspond au nom du fichier contenant les données.   # donnees.xlsx correspond au nom du fichier Excel
-
-# pour lancer le script : python script_recup_info_balises.py
+extract_data("exemple.txt", "donnees.xlsx") # exemple.txt = file which contain data.   # donnees.xlsx = Excel file's name
